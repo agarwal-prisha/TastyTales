@@ -78,7 +78,7 @@ public class ProfileSetupFrame extends JPanel {
             else JOptionPane.showMessageDialog(this, "Error saving preferences.");
 
             parentFrame.getContentPane().removeAll();
-            parentFrame.getContentPane().add(new DashboardFrame());
+            parentFrame.getContentPane().add(new DashboardFrame(userId));
             parentFrame.revalidate();
             parentFrame.repaint();
         });
